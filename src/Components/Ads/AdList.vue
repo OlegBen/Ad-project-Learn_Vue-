@@ -39,31 +39,9 @@
 
 <script>
   export default {
-    data () {
-      return {
-        myAds: [
-          {
-            title: 'First Add',
-            description: 'First Description',
-            promo: false,
-            imageSrc: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
-            id: '123'
-          },
-          {
-            title: 'Second Add',
-            description: 'Second Description',
-            promo: true,
-            imageSrc: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-            id: '124'
-          },
-          {
-            title: 'Third Add',
-            description: 'Third Description',
-            promo: true,
-            imageSrc: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
-            id: '125'
-          }
-        ]
+    computed: {
+      myAds () {
+        return this.$store.getters.myAds
       }
     }
   }
