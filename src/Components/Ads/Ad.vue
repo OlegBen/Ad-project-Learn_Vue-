@@ -6,7 +6,6 @@
                     <v-card-media
                             src='https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
                             height="300"
-
                     ></v-card-media>
                     <v-card-text>
                         <h1 class="text--primary">lorem</h1>
