@@ -76,6 +76,11 @@
           ).catch(() => {})
         }
       }
+    },
+    created () {
+      if (this.$route.query['loginError']) {
+        this.$store.dispatch('setError', 'Login please')
+      }
     }
   }
 </script>
