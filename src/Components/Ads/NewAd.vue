@@ -30,11 +30,6 @@
                 </v-layout>
                 <v-layout row>
                     <v-flex xs12>
-                        <img src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg" height="150"/>
-                    </v-flex>
-                </v-layout>
-                <v-layout row>
-                    <v-flex xs12>
                         <v-switch
                                 color="primary"
                                 label="Add to promo?"
@@ -75,6 +70,8 @@
             promo: this.promo,
             imageSrc: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
           }
+
+          this.$store.dispatch('createAd', ad)
         }
       }
     }
