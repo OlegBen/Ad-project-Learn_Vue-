@@ -100,7 +100,7 @@ export default {
   },
   methods: {
     closeError () {
-      this.$store.getters.error = null
+      this.$store.dispatch('clearError')
     },
     onLogout () {
       this.$store.dispatch('logoutUser')
